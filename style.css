@@ -27,8 +27,22 @@ h1 {
   font-weight: 600;
 }
 
+h2 {
+  color: #997976;
+  font-weight: bold;
+  padding-top: 1rem;  
+}
+
+.container {
+  padding: 6px;
+}
+
 header {
   background-color: #E38A8A;
+}
+
+main {
+  padding: 3rem;
 }
 
 .logo {
@@ -48,7 +62,7 @@ header {
   display: inline-block;
   position: relative;
   color: white;
-}
+} 
 
 .nav-link:hover {
   color: white;
@@ -200,7 +214,7 @@ header {
   box-shadow:0 0 0 3px #dde9ec;
 }
 
-.contacto input[type='submit']{
+.contacto input[type='reset']{
   border: 1px solid #ffffff;
   padding: 8px 16px;
   border-radius: 5px;
@@ -208,12 +222,12 @@ header {
   font-weight: bold;
   background: #E38A8A;
 }
-.contacto input[type='submit']:hover{
+.contacto input[type='reset']:hover{
   background: #E38A8A;
   background: -moz-linear-gradient(top, #ECD6D9 5%, #E38A8A 95%);
   background: -webkit-linear-gradient(top, #ECD6D9 5%,#E38A8A 95%);
 }
-.contacto input[type='submit']:active{
+.contacto input[type='reset']:active{
   background: #E38A8A;
   background: -moz-linear-gradient(top, #ECD6D9 5%, #E38A8A 95%);
   background: -webkit-linear-gradient(top, #ECD6D9 5%,#E38A8A 95%);
