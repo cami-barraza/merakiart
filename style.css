@@ -1,26 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap");
-body {
-  font: "Readex Pro", sans-serif;
-}
 
-/* width */
 ::-webkit-scrollbar {
   width: 5px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: #E38A8A;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #ECD6D9;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #E38A8A;
+}
+
+body {
+  font-family: 'Readex Pro', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 2rem;
+  color: #997976;
+  font-weight: 600;
 }
 
 header {
@@ -76,7 +80,6 @@ header {
 }
 
 .footer {
-  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -168,42 +171,54 @@ header {
   color: #C25E30;
 }
 
-.form-box {
-  max-width: 500px;
-  margin: auto;
-  padding: 50px;
-  background: #ffffff;
-  border: 10px solid #ffffff;
+.contacto{
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+  margin-top: 1rem;
+  margin-bottom: 1.9rem;
+  background-color: white;
 }
 
-.form-group {
-  padding: 10px;
+.contacto label{
+  display: block; 
+  font-weight: bold;
+  color: #E38A8A;
+}
+.contacto div{
+  margin-bottom: 15px;
 }
 
-.label {
-  padding: 5px;
+.contacto input[type='text'], .contacto textarea{
+  padding: 7px 6px;
+  width: 100%; 
+  border: 1px solid #d4d4d4;
+  resize: none; 
+  margin: 5px 0;
+}
+.contacto input[type='text']:focus, .contacto textarea:focus{
+  outline: none;
+  box-shadow:0 0 0 3px #dde9ec;
 }
 
-input {
-  width: 100%;
+.contacto input[type='submit']{
+  border: 1px solid #ffffff;
+  padding: 8px 16px;
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: bold;
+  background: #E38A8A;
+}
+.contacto input[type='submit']:hover{
+  background: #E38A8A;
+  background: -moz-linear-gradient(top, #ECD6D9 5%, #E38A8A 95%);
+  background: -webkit-linear-gradient(top, #ECD6D9 5%,#E38A8A 95%);
+}
+.contacto input[type='submit']:active{
+  background: #E38A8A;
+  background: -moz-linear-gradient(top, #ECD6D9 5%, #E38A8A 95%);
+  background: -webkit-linear-gradient(top, #ECD6D9 5%,#E38A8A 95%);
 }
 
-textarea {
-  width: 100%;
-}
-
-.btn {
-  text-align: center;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-ul li {
-  list-style: none;
-}
 
 @media (max-width: 575.98px) {
   #icon {
