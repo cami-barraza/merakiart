@@ -3,6 +3,26 @@ body {
   font: "Readex Pro", sans-serif;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #E38A8A;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ECD6D9;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #E38A8A;
+}
+
 header {
   background-color: #E38A8A;
 }
