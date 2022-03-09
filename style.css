@@ -24,8 +24,8 @@ h1 {
   text-align: center;
   margin-top: 2rem;
   color: #997976;
-  font-weight: 600;
-}
+  font-weight: 600; 
+} 
 
 h2 {
   color: #997976;
@@ -52,6 +52,10 @@ main {
   margin-right: 50px;
   font-weight: bold;
   padding: 20px;
+}
+
+.card {
+  width: 18rem; 
 }
 
 .logo:hover {
