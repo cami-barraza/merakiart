@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap");
+body {
+  font: "Readex Pro", sans-serif;
+}
+
+header {
+  background-color: #E38A8A;
+}
+
+.logo {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  margin-right: 50px;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.logo:hover {
+  color: #ECD6D9;
+}
+
+.nav-link {
+  display: inline-block;
+  position: relative;
+  color: white;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+.nav-link:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.nav-link:after {
+  content: '';
+  position: absolute;
+  width: 90%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ECD6D9;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+#contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  background-color: #E38A8A;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 200px;
+}
+
+#contact a {
+  margin: 10px;
+}
+
+#contact p {
+  font-size: 14px;
+}
+
+.icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: none;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  -webkit-transition: -webkit-transform 1s, -webkit-box-shadow 0.5s;
+  transition: -webkit-transform 1s, -webkit-box-shadow 0.5s;
+  transition: transform 1s, box-shadow 0.5s;
+  transition: transform 1s, box-shadow 0.5s, -webkit-transform 1s, -webkit-box-shadow 0.5s;
+}
+
+.icon:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+#icon-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+}
+
+.btn {
+  text-align: center;
+}
+
+.btn--twitter {
+  color: #55acee;
+}
+
+.btn--instagram {
+  color: #833AB4;
+}
+
+.btn--facebook {
+  color: #3a5795;
+}
+
+.btn--sendmail {
+  color: #C25E30;
+}
+
+.form-box {
+  max-width: 500px;
+  margin: auto;
+  padding: 50px;
+  background: #ffffff;
+  border: 10px solid #ffffff;
+}
+
+.form-group {
+  padding: 10px;
+}
+
+.label {
+  padding: 5px;
+}
+
+input {
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+}
+
+.btn {
+  text-align: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+@media (max-width: 575.98px) {
+  #icon {
+    width: 30px;
+    height: 30px;
+  }
+  ul li {
+    font-size: 12px;
+  }
+  #contact p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #icon {
+    width: 25px;
+    height: 25px;
+  }
+  ul li {
+    font-size: 10px;
+  }
+  #contact p {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #icon {
+    width: 30px;
+    height: 30px;
+  }
+  ul li {
+    font-size: 12px;
+  }
+  #contact p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  #icon {
+    width: 40px;
+    height: 40px;
+  }
+  ul li {
+    font-size: 14px;
+  }
+  #contact p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1399.98px) {
+  #icon {
+    width: 40px;
+    height: 40px;
+  }
+  ul li {
+    font-size: 14px;
+  }
+  #contact p {
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap");
+
+$readex_pro: 'Readex Pro', sans-serif;
+$salmon_color: #E38A8A;
+$rose_color: #ECD6D9;
+$circle_color: #fff;
+$twitter: #55acee;
+$instagr: #833AB4;
+$faceboo: #3a5795;
+$senmail: #C25E30;
+
+@mixin flexible ($dis, $just, $align) {
+	display: $dis;
+	justify-content: $just;
+	align-items: $align;
+}
+
+@mixin grid ($columnas, $espacio){
+    display: grid;
+    grid-template-columns: repeat($columnas, 1fr);
+    gap: $espacio;
+}
+
+@mixin bgcolor($circle, $bg) {
+	color: $circle;
+	background-color: $bg;
+}
+
+$redes:(
+    twitter:    $twitter,
+    instagram:  $instagr,
+    facebook:   $faceboo,
+    sendmail:   $senmail);
+
+// -----------------------------------------------
+// HEADER & BODY
+
+body {
+	font: $readex_pro;
+}
+
+header {
+    background-color: $salmon_color;
+}
+
+.logo {
+	text-decoration: none;
+	color: white;
+	font-size: 25px;
+	margin-right: 50px;
+	font-weight: bold;
+	padding: 20px;
+    &:hover {
+		color: $rose_color;
+	}
+}
+
+.nav-link {
+    display: inline-block;
+    position: relative;
+    color: white;
+    &:hover {
+        color: white;
+        &:after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        width: 90%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: $rose_color;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+}
+
+// -----------------------------------------------
+// MAIN
+
+
+
+// -----------------------------------------------
+// FOOTER
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+ }
+
+#contact {
+	a {
+		margin: 10px;
+	}
+
+	@include flexible(flex, center, center);
+	@include bgcolor($circle_color,$salmon_color);
+	flex-direction: column;
+	height: 200px;
+	p {
+		font-size: 14px;
+	}
+
+}
+
+.icon {
+	@include flexible(flex, center, center);
+	@include bgcolor(none,$circle_color);
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	transition: transform 1s, box-shadow 0.5s;
+	&:hover {
+		transform: translateY(-3px);
+	}
+}
+
+#icon-container{
+	@include flexible(flex, center, none)
+}
+
+.btn {
+	text-align: center;
+}
+
+@each $red, $color in $redes {
+	.btn--#{$red} {
+		color: $color;
+	}
+}
+
+// -----------------------------------------------
+// FORM
+
+.form-box {
+	max-width: 500px;
+	margin: auto;
+	padding: 50px;
+	background: #ffffff;
+	border: 10px solid #ffffff;
+}
+.form-group {
+	padding: 10px;
+}
+.label {
+	padding: 5px;
+}
+input {
+	width: 100%;
+}
+textarea {
+	width: 100%;
+}
+.btn {
+	text-align: center;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	li {
+		list-style: none;
+	}
+}
+
+// -----------------------------------------------
+// MEDIA
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+	//NAVBAR
+
+	//FOOTER
+	#icon {
+		width: 30px;
+		height: 30px;
+	}
+	ul {
+		li {
+			font-size: 12px;
+		}
+	}
+	#contact {
+		p {
+			font-size: 12px;
+		}
+	}
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+	//NAVBAR
+
+	//FOOTER
+	#icon {
+		width: 25px;
+		height: 25px;
+	}
+	ul {
+		li {
+			font-size: 10px;
+		}
+	}
+	#contact {
+		p {
+			font-size: 10px;
+		}
+	}
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+	//NAVBAR
+
+	//FOOTER
+	#icon {
+		width: 30px;
+		height: 30px;
+	}
+	ul {
+		li {
+			font-size: 12px;
+		}
+	}
+	#contact {
+		p {
+			font-size: 12px;
+		}
+	}
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+	//NAVBAR
+
+	//FOOTER
+	#icon {
+		width: 40px;
+		height: 40px;
+	}
+	ul {
+		li {
+			font-size: 14px;
+		}
+	}
+	#contact {
+		p {
+			font-size: 14px;
+		}
+	}
+}
+
+// X-Large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) {
+	//NAVBAR
+
+	//FOOTER
+	#icon {
+		width: 40px;
+		height: 40px;
+	}
+	ul {
+		li {
+			font-size: 14px;
+		}
+	}
+	#contact {
+		p {
+			font-size: 14px;
+		}
+	}
+}
