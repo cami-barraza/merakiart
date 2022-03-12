@@ -20,17 +20,6 @@ body {
   font-family: 'Readex Pro', sans-serif;
 }
 
-h1 {
-  text-align: center;
-  color: #997976;
-  font-weight: 600; 
-} 
-
-h2 {
-  color: #997976;
-  font-weight: bold; 
-}
-
 .container {
   padding: 1rem;
 }
@@ -194,8 +183,7 @@ main {
 .contacto{
   border: 1px solid #ffffff;
   border-radius: 6px;
-  margin-top: 1rem;
-  margin-bottom: 1.9rem;
+  padding: 3.2rem;
   background-color: white;
 }
 
