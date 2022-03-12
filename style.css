@@ -22,19 +22,17 @@ body {
 
 h1 {
   text-align: center;
-  margin-top: 2rem;
   color: #997976;
   font-weight: 600; 
 } 
 
 h2 {
   color: #997976;
-  font-weight: bold;
-  padding-top: 1rem;  
+  font-weight: bold; 
 }
 
 .container {
-  padding: 6px;
+  padding: 1rem;
 }
 
 header {
@@ -55,8 +53,12 @@ main {
 }
 
 .card {
-  width: 18rem; 
+  width: 18rem;
 }
+
+.col-md-auto {
+  padding: 1rem;
+} 
 
 .logo:hover {
   color: #ECD6D9;
